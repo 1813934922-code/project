@@ -5,11 +5,11 @@
 #include <gpio.h>
 
 #define Key_Pin GPIO_PIN_15
-
+//static uint8_t Key_Num1=0;
 uint8_t Key_GetNum()
 {
     uint8_t Key_Num=0;
-    //static uint8_t Key_Num1=0;
+
     if (HAL_GPIO_ReadPin(GPIOA,Key_Pin)==0)
     {
         HAL_Delay(20);
