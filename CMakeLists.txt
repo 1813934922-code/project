@@ -35,6 +35,8 @@ enable_language(C ASM)
 add_executable(${CMAKE_PROJECT_NAME}
         Core/Src/key.c
         Core/Inc/key.h
+        Core/Src/servo.c
+        Core/Inc/servo.h
 )
 
 # Add STM32CubeMX generated sources
