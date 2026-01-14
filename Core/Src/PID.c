@@ -23,7 +23,7 @@ float drive_PID(PID *pid, const float err)
         pid->last_err= err;
     }
     pid->det=pid->err-pid->last_err;
-    //result=pid->Kp*err+pid->Ki*pid->inter;
-    return result;           ///   // // /
+    result=pid->Kp*err+pid->Ki*pid->inter;
+    return result;
 }
 
